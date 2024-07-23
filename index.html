@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/c9dabe80cc.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <h1>LAPLACE SALLIS IV</h1>
+      <div class="social-icons">
+        <img src="icons/Linkedin solid.svg" alt="" class="linkedin" />
+        <img src="icons/GitHub solid.svg" alt="" class="github" />
+        <img src="icons/Envelope Regular.svg" alt="" class="email" />
+      </div>
+      <ul class="navigation">
+        <li><a href="#home" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <a href="Resume (UPDATED).pdf" class="nav-link" target="_blank"
+            >Resume</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div id="home">
+      <img src="images/headshot.jpg" alt="LaPlace Sallis IV" class="headshot" />
+      <div class="white-divider"></div>
+      <p class="name-title">Welcome!</p>
+      <p class="photo-caption">
+        Hello, my name is LaPlace Sallis IV, and I am a computer science and
+        business student at Rice University. I have a passion for machine
+        learning, web development, data science, and computers in general. I am
+        eager to enhance my current software engineering skills and learn new
+        programming languages. Please explore this website to learn more about
+        me and my work!
+      </p>
+    </div>
+
+    <div id="skills">
+      <h2 class="skills-title">Skills</h2>
+      <div class="skills-titles">
+        <p class="hard-skills-title">Hard Skills</p>
+        <p class="soft-skills-title">Soft Skills</p>
+      </div>
+      <div class="skills-lists">
+        <ul class="hard-skills">
+          <li>Python</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>GitHub</li>
+          <li>React (coming soon)</li>
+          <li>Flask (coming soon)</li>
+          <li>Django (coming soon)</li>
+          <li>Data Structures</li>
+          <li>Algorithms</li>
+        </ul>
+        <ul class="soft-skills">
+          <li>Leadership</li>
+          <li>Collaboration</li>
+          <li>Hard Work</li>
+          <li>Punctuality</li>
+          <li>Time Management</li>
+          <li>Adaptability</li>
+          <li>Problem Solving</li>
+          <li>Communication</li>
+          <li>Resilience</li>
+          <li>Critical Thinking</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="projects">
+      <h2 class="projects-title">Projects</h2>
+      <div class="projects-list">
+        <div class="project1">
+          <img src="images/image.png" alt="" />
+          <p class="project-title">MLB Game Predictor</p>
+          <p class="project-description">
+            This project leverages advanced machine learning models to provide
+            accurate game-by-game predictions and season-long projections of MLB
+            games during the 2024 season using a comprehensive historical
+            dataset.
+          </p>
+        </div>
+        <div class="project2">
+          <img src="images/image.png" alt="" />
+          <p class="project-title">Sign Language Interpreter</p>
+          <p class="project-description">
+            This project uses hand-tracking software and machine learning models
+            to understand ASL gestures based on a copmrehensive dataset of
+            various hand symboll
+          </p>
+        </div>
+        <div class="project3">
+          <img src="images/image.png" alt="" />
+          <p class="project-title">Project Title</p>
+          <p class="project-description">Project Description: Coming Soon!</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact">
+      <h2 class="connect-title">Let's Connect!</h2>
+      <form action="https://formspree.io/f/xblrdgdq" method="POST">
+        <div class="form-holder">
+          <label for="name">Name:</label>
+          <input
+            id="name"
+            type="text"
+            placeholder="Enter Name Here"
+            class="input-field"
+            name="sender-name"
+            required
+          />
+          <label for="email">Email:</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter Email Here"
+            class="input-field"
+            name="sender-email"
+            required
+          />
+          <label for="message">Message:</label>
+          <textarea
+            class="input-field"
+            name="sender-message"
+            id="message"
+            placeholder="Enter Message Here:"
+            required
+          ></textarea>
+          <button class="submit-button">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
