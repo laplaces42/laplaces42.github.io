@@ -74,6 +74,10 @@ nav {
   src: url(fonts/roboto.ttf);
 }
 
+.burger-menu {
+  display: none;
+}
+
 h1 {
   position: relative;
   left: 30px;
@@ -106,18 +110,18 @@ h1:hover .social-icons {
   margin: 0.1vh 0.5vw;
 }
 
-nav ul {
+.navigation {
   position: relative;
   padding-left: 15px;
   display: flex;
   right: 5px;
 }
 
-nav li {
+.nav-item {
   list-style-type: none;
 }
 
-nav li a {
+.nav-link {
   text-decoration: none;
   font-family: rubik;
   color: white;
@@ -126,7 +130,7 @@ nav li a {
   transition: font-size 0.5s, color 0.5s, font-weight 0.5s;
 }
 
-nav li a:hover {
+.nav-link:hover {
   font-weight: bold;
   font-size: calc(0.5em + 1vw);
   color: #82b1ff; /* Light blue */
@@ -396,4 +400,67 @@ button:hover {
   position: relative;
   padding: 0px 15px;
   max-height: 900px;
+}
+
+@media screen and (max-width: 720px) {
+  .navigation {
+    display: none;
+  }
+
+  h1 {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: rubik;
+    font-size: calc(1.2em + 1vw);
+    color: #82b1ff; /* Light blue */
+    text-decoration: none;
+    font-weight: bold;
+    transition: font-size 0.5s;
+  }
+
+  .burger-menu {
+    display: inline;
+    position: relative;
+    width: auto;
+    
+    top: 100%;
+    background-color: transparent;
+    border: 0px solid transparent;
+    right: 4vw;
+  }
+
+  .burger-menu img {
+    width: 4vw;
+    position: relative;
+  }
+
+  .burger-menu:hover {
+    cursor: pointer;
+  }
+
+  .drop-navigation {
+    display: none;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    border-radius: 7px;
+    padding-left: 0px;
+  }
+  
+
+  .drop-nav-item {
+    list-style: none;
+    padding: 8px 16px;
+  }
+
+  .drop-nav-link {
+    text-decoration: none;
+  }
+
+  .burger-menu:hover .drop-navigation {
+    cursor: pointer;
+    display: block;
+  }
 }
