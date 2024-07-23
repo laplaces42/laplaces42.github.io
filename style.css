@@ -85,14 +85,11 @@ h1 {
   transition: font-size 0.5s;
 }
 
-
 .social-icons {
-    display: none;
-    
-    
+  display: none;
 }
 
-h1:hover .social-icons{
+h1:hover .social-icons {
   font-size: calc(0.7em + 1vw);
   display: flex;
   top: 0;
@@ -106,15 +103,13 @@ h1:hover .social-icons{
 .github,
 .email {
   width: 3vw;
-  margin: .1vh 0.5vw;
-  
+  margin: 0.1vh 0.5vw;
 }
 
 nav ul {
   position: relative;
   padding-left: 15px;
   display: flex;
-  
 }
 
 nav li {
@@ -286,6 +281,7 @@ nav li a:hover {
   background-color: white;
   margin: 0px 5vw;
   border-radius: 25px;
+  width: 40vw;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.8);
 }
 
@@ -298,22 +294,30 @@ nav li a:hover {
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.8);
 }
 
-.projects-list img {
-  width: 40vh;
-  color: #0d47a1;
+.project-image {
+  width: 20vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 10px;
 }
 
 .project-title {
   font-weight: bold;
   padding-left: 5px;
-  font-size: calc(.7em + 1vw);
+  font-size: calc(0.7em + 1vw);
   color: #0d47a1;
   margin-bottom: 5px;
 }
 
 .project-description {
   padding-left: 5px;
+  font-size: calc(0.3em + 1vw);
   color: #1c1c1c;
+}
+
+.project-link {
+  text-decoration: none;
 }
 
 /* Contact Page */
