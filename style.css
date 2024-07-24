@@ -93,16 +93,6 @@ h1 {
   display: none;
 }
 
-h1:hover .social-icons {
-  font-size: calc(0.7em + 1vw);
-  display: flex;
-  top: 0;
-  position: relative;
-  background-color: white;
-  width: fit-content;
-  border-radius: 10px;
-}
-
 .linkedin,
 .github,
 .email {
@@ -403,23 +393,54 @@ button:hover {
 }
 
 @media screen and (max-width: 720px) {
-  .navigation {
-    display: none;
+
+  nav {
+    
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: sticky;
+    display: block;
+    border-radius: 50px;
+    background-color: black;
+    align-content: center;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  
+    
   }
 
   h1 {
     position: relative;
+    text-align: center;
     left: 50%;
     transform: translateX(-50%);
     font-family: rubik;
-    font-size: calc(1.2em + 1vw);
+    font-size: calc(.8em + 1vw);
     color: #82b1ff; /* Light blue */
-    text-decoration: none;
     font-weight: bold;
-    transition: font-size 0.5s;
+    margin-top: 10px;
+    margin-bottom: 5px;
   }
 
-  .burger-menu {
+  .navigation {
+    position: relative;    
+    width: auto;
+    display: inline-flex;
+    right: 0px;
+    ;
+    margin-top: 0px;
+    padding-left: 0px;
+    margin-bottom: 5px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .nav-item {
+    margin-top: 0px;
+  }
+
+
+  /* .burger-menu {
     display: inline;
     position: relative;
     width: auto;
@@ -447,20 +468,33 @@ button:hover {
     right: 0;
     border-radius: 7px;
     padding-left: 0px;
+    color: #0d47a1;
   }
   
 
   .drop-nav-item {
     list-style: none;
     padding: 8px 16px;
+    
   }
 
+  
   .drop-nav-link {
     text-decoration: none;
+    
   }
-
+  
+  .drop-nav-link:hover {
+    text-decoration: none;
+    background-color:#1c1c1c;
+  }
+  
+  .drop-nav-link:hover{
+    
+    color: white;
+  }
   .burger-menu:hover .drop-navigation {
     cursor: pointer;
     display: block;
-  }
+  } */
 }
