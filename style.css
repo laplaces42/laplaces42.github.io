@@ -331,6 +331,7 @@ form {
   position: absolute;
   border-radius: 10px;
   width: 50vw;
+  min-width: 460px;
   height: 65vh;
   max-height: 460px;
   left: 50vw;
@@ -474,6 +475,10 @@ button:hover {
   .project-description {
     position: relative;
     bottom: 8px;
+  }
+
+  form {
+    width: 85vw;
   }
   /* .burger-menu {
     display: inline;
