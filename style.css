@@ -426,8 +426,8 @@ button:hover {
     position: relative;    
     width: auto;
     display: inline-flex;
+    
     right: 0px;
-    ;
     margin-top: 0px;
     padding-left: 0px;
     margin-bottom: 5px;
@@ -435,11 +435,46 @@ button:hover {
     transform: translate(-50%);
   }
 
-  .nav-item {
-    margin-top: 0px;
+  .nav-link, .nav-item{
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
+  .name-title {
+    margin-top: 50px;
+    left: 50vw;
+  }
 
+  .headshot {
+    width: 50vw;
+    max-width: 230px;
+    left: 50vw;
+    top: 45vh;
+  }
+
+  .photo-caption {
+    left: 50vw;
+    top: 72vh;
+    height: auto;
+    width: 70vw;
+  }
+
+  .projects-list {
+    display: inline;
+  }
+
+  .project1, .project2, .project3{
+    width: auto;
+    
+  }
+  .project-title {
+    margin-bottom: 1px;
+  }
+
+  .project-description {
+    position: relative;
+    bottom: 8px;
+  }
   /* .burger-menu {
     display: inline;
     position: relative;
