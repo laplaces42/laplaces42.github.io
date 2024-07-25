@@ -404,7 +404,7 @@ form {
     left: 50%;
     transform: translateX(-50%);
     font-family: rubik;
-    font-size: calc(1.5em + 1vw);
+    font-size: calc(1em + 1vw);
     color: #82b1ff; /* Light blue */
     font-weight: bold;
     margin-top: 10px;
