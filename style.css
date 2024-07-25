@@ -45,6 +45,7 @@ body {
   scroll-margin-top: 100px;
   width: 100vw;
   height: 100vh;
+  margin-top: 200px;
 }
 
 /* Nav Bar */
@@ -86,7 +87,11 @@ h1 {
   color: #82b1ff; /* Light blue */
   text-decoration: none;
   font-weight: bold;
-  transition: font-size 0.5s;
+  transition: font-size 0.5s text-shadow 0.3s ease-in-out;
+}
+
+.underglow {
+  text-shadow: 0 0 10px white;
 }
 
 .social-icons {
@@ -338,10 +343,9 @@ form {
   transform: translate(-50%, 0);
 }
 
-label,
-input,
-button,
-textarea {
+.form-label,
+.input-field,
+.submit-button .message-field {
   display: block;
   position: relative;
   font-family: roboto;
@@ -349,13 +353,13 @@ textarea {
   box-sizing: border-box;
 }
 
-label {
+.forom-label {
   padding-top: 10px;
   font-weight: 10px;
   color: #82b1ff; /* Light blue */
 }
 
-input {
+.input-field {
   height: 5vh;
   border: 2px solid #82b1ff; /* Light blue */
   border-radius: 10px;
@@ -363,7 +367,7 @@ input {
   color: white;
 }
 
-textarea {
+.message-field {
   height: 220px;
   border: 2px solid #82b1ff; /* Light blue */
   border-radius: 10px;
@@ -371,7 +375,7 @@ textarea {
   color: white;
 }
 
-button {
+.submit-button {
   height: 5vh;
   margin-top: 10px;
   background-color: #82b1ff; /* Light blue */
@@ -381,7 +385,7 @@ button {
   transition: background-color 0.5s, color 0.5s;
 }
 
-button:hover {
+.submit-button:hover {
   background-color: #1c1c1c; /* Dark gray */
   color: #82b1ff; /* Light blue */
   cursor: pointer;
@@ -394,8 +398,23 @@ button:hover {
 }
 
 @media screen and (max-width: 720px) {
+  h1 {
+    position: relative;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: rubik;
+    font-size: calc(1.5em + 1vw);
+    color: #82b1ff; /* Light blue */
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
 
-  nav {
+  .navigation {
+    display: none;
+  }
+  /* nav {
     
     top: 0;
     left: 0;
@@ -410,18 +429,6 @@ button:hover {
     
   }
 
-  h1 {
-    position: relative;
-    text-align: center;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: rubik;
-    font-size: calc(.8em + 1vw);
-    color: #82b1ff; /* Light blue */
-    font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 5px;
-  }
 
   .navigation {
     position: relative;    
@@ -438,8 +445,8 @@ button:hover {
 
   .nav-link, .nav-item{
     padding-top: 0px;
-    padding-bottom: 0px;
-  }
+    padding-bottom: 0px; 
+  }*/
 
   .name-title {
     margin-top: 50px;
@@ -464,9 +471,10 @@ button:hover {
     display: inline;
   }
 
-  .project1, .project2, .project3{
+  .project1,
+  .project2,
+  .project3 {
     width: auto;
-    
   }
   .project-title {
     margin-bottom: 1px;
@@ -480,27 +488,37 @@ button:hover {
   form {
     width: 85vw;
   }
-  /* .burger-menu {
+  .burger-menu {
     display: inline;
     position: relative;
     width: auto;
-    
-    top: 100%;
-    background-color: transparent;
-    border: 0px solid transparent;
-    right: 4vw;
+    padding: 0;
+    margin-top: 0px;
+    right: 10px;
+  }
+
+  .burger-button {
+    height: 5vh;
+    background-color: #82b1ff; /* Light blue */
+    border: 2px solid #82b1ff; /* Light blue */
+    border-radius: 10px;
+    color: white;
+    transition: background-color 0.5s, color 0.5s;
   }
 
   .burger-menu img {
-    width: 4vw;
+    height: 18px;
+    width: 18px;
+
+    display: block;
     position: relative;
   }
 
-  .burger-menu:hover {
+  .burger-button:hover {
     cursor: pointer;
   }
 
-  .drop-navigation {
+  .burger-navigation {
     display: none;
     background-color: white;
     position: absolute;
@@ -509,32 +527,21 @@ button:hover {
     border-radius: 7px;
     padding-left: 0px;
     color: #0d47a1;
-  }
-  
-
-  .drop-nav-item {
     list-style: none;
-    padding: 8px 16px;
-    
   }
 
-  
-  .drop-nav-link {
-    text-decoration: none;
-    
-  }
-  
-  .drop-nav-link:hover {
-    text-decoration: none;
-    background-color:#1c1c1c;
-  }
-  
-  .drop-nav-link:hover{
-    
-    color: white;
-  }
-  .burger-menu:hover .drop-navigation {
-    cursor: pointer;
+  .burger-nav-link {
     display: block;
-  } */
+    text-decoration: none;
+    padding: 5px 20px 5px 4px;
+    font-size: 1em;
+    transition: font-size 0.5s;
+    color: #0d47a1;
+  }
+
+  .burger-nav-link:visited {
+    color: #0d47a1;
+  }
+
+
 }

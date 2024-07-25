@@ -3,37 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/c9dabe80cc.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
+    <script type="module" src="script.js"></script>
   </head>
   <body>
     <nav>
       <h1>LAPLACE SALLIS IV</h1>
-      <div class="social-icons">
-        <img src="icons/Linkedin solid.svg" alt="" class="linkedin" />
-        <img src="icons/GitHub solid.svg" alt="" class="github" />
-        <img src="icons/Envelope Regular.svg" alt="" class="email" />
-      </div>
       <ul class="navigation">
         <li class="nav-item"><a href="#home" class="nav-link">About</a></li>
         <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
         <li class="nav-item">
           <a href="Resume (UPDATED).pdf" class="nav-link" target="_blank"
             >Resume</a
           >
         </li>
       </ul>
+      <div class="burger-menu">
+        <button class="burger-button">
+          <img src="icons/burger menu.svg" alt="" />
+        </button>
+        <div class="burger-nav-holder">
+          <ul class="burger-navigation">
+            <li class="buger-nav-item">
+              <a href="#home" class="burger-nav-link">About</a>
+            </li>
+            <li class="burger-nav-item">
+              <a href="#skills" class="burger-nav-link">Skills</a>
+            </li>
+            <li class="burger-nav-item">
+              <a href="#projects" class="burger-nav-link">Projects</a>
+            </li>
+            <li class="burger-nav-item">
+              <a href="#contact" class="burger-nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="Resume (UPDATED).pdf"
+                class="burger-nav-link"
+                target="_blank"
+                >Resume</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-
     <div id="home">
-      <img src="images/headshot.jpg" alt="LaPlace Sallis IV" class="headshot" />
+      <img
+        src="images/headshot.jpg"
+        alt="LaPlace Sallis IV"
+        class="headshot"
+        id="headshot"
+      />
       <p class="name-title">Welcome!</p>
       <p class="photo-caption">
         Hello, my name is LaPlace Sallis IV, and I am a computer science and
@@ -128,7 +156,7 @@
       <h2 class="connect-title">Let's Connect!</h2>
       <form action="https://formspree.io/f/xblrdgdq" method="POST">
         <div class="form-holder">
-          <label for="name">Name:</label>
+          <label for="name" class="form-label">Name:</label>
           <input
             id="name"
             type="text"
@@ -137,7 +165,7 @@
             name="sender-name"
             required
           />
-          <label for="email">Email:</label>
+          <label for="email" class="form-label">Email:</label>
           <input
             id="email"
             type="email"
@@ -146,9 +174,9 @@
             name="sender-email"
             required
           />
-          <label for="message">Message:</label>
+          <label for="message" class="form-label">Message:</label>
           <textarea
-            class="input-field"
+            class="message-field"
             name="sender-message"
             id="message"
             placeholder="Enter Message Here:"
